@@ -7,7 +7,7 @@ class CreateEvents < ActiveRecord::Migration[6.1]
       t.string :location
       t.string :finish_date
       t.integer :price
-      t.references :user, index: { unique: true }, foreign_key: true
+      t.references :organizer, index: true, foreign_key: { to_table: 'users' }
       t.timestamps
     end
   end
