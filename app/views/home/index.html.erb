@@ -1,6 +1,9 @@
 <div class="col-8 mx-auto text-center">
   <h1>Private Events</h1>
   <p>The best event management system on the internet (maybe)</p>
-  <p>Sign in or create a new account to access the app</p>
+   <% unless user_signed_in? %>
+    <p>Sign in or create a new account to access the app</p>
+   <% end %>
+   <%= link_to 'Create a new event', new_event_path, class: 'btn btn-primary'  %>
 </div>
 
