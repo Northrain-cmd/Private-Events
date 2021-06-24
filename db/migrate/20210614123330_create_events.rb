@@ -5,7 +5,7 @@ class CreateEvents < ActiveRecord::Migration[6.1]
       t.string :description
       t.datetime :start_date
       t.string :location
-      t.string :finish_date
+      t.datetime :finish_date
       t.integer :price
       t.references :organizer, index: true, foreign_key: { to_table: 'users' }
       t.timestamps

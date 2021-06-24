@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2021_06_15_074223) do
     t.string "description"
     t.datetime "start_date"
     t.string "location"
-    t.string "finish_date"
+    t.datetime "finish_date"
     t.integer "price"
     t.integer "organizer_id"
     t.datetime "created_at", precision: 6, null: false

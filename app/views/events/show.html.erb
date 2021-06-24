@@ -1,0 +1,8 @@
+<div class="col-6 mx-auto text-center mb-2">
+  <h1><%= @event.title %><h1>
+  <h2>This event is hosted by 
+    <a href="#">
+      <%= @event.organizer.first_name + ' ' + @event.organizer.last_name  %>
+    </a>
+  </h2>
+</div>
